@@ -5,47 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Debianaire - package poetry</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+    <title>debianaire - package manager poetry</title>
 
-        .container {
-            border: 2px solid #f76707;
-            background-color: #fff4e6;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Life+Savers:wght@800&display=swap"
+        rel="stylesheet">
 
-        .container>div {
-            border: 2px solid #ffa94d;
-            background-color: #ffd8a8;
-            padding: 1em;
-            max-width: fit-content;
-        }
-
-        .container {
-            width: 50%;
-            min-height: 3em;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .container>div {
-            flex: 1 1 150px;
-        }
-    </style>
+    <link href="./app.css" rel="stylesheet" />
 
 </head>
 
 
 <body>
-    <h1>Debianaire - package poetry</h1>
-    <sub>Idea by <a href="https://bsky.app/profile/iznaut.com/post/3mtyka6yscc2q">izzy kestrel</a>. Uses <a
-            href="https://github.com/SortableJS/Sortable">Sortable</a>.</sub>
+    <h1>debianaire - package manager poetry</h1>
+    <sup>Idea by <a href="https://bsky.app/profile/iznaut.com/post/3mtyka6yscc2q">izzy kestrel</a>. Uses <a
+            href="https://github.com/SortableJS/Sortable">Sortable</a>. Command/package names sourced from <a
+            href="https://packages.debian.org/">Debian.</a></sup>
+
 
     <h2>Today's packages</h2>
     <div id="packageContainer" class="container"></div>
     <h2 id="dateTitle">Your poem for today</h2>
+    <sup>Write poetry by dragging magnets here.</sup>
     <div id="poemContainer" class="container"></div>
 
     <h2>Share</h2>

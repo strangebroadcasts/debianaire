@@ -1,16 +1,19 @@
 // The Debianaire package manager fridge poetry app
 
-// How many magnets do you add?
+// How many package names to add?
 const WORD_CHOICES = 50;
 
-// Which ratio of the choices should be dictionary words?
-const DICTIONARY_WORD_RATIO = 0.6;
+// How many of the package names should also be dictionary terms?
+const DICTIONARY_WORD_RATIO = 0.66;
 
 // How many wildcards to add?
 const EXTRA_WILDCARDS = 5;
 
 // Extra symbols to add.
 const EXTRA_SYMBOLS = ["-s", "-s", "-s", "-s", "-s", ",", ",", ",", ",", ",", ",", ".", ".", "."];
+
+// Add a rotation transform to each magnet?
+const ROTATE_MAGNETS = true;
 
 // The SplitMix32 PRNG implemented by bryc, 2017
 // https://stackoverflow.com/questions/521295/seeding-the-random-number-generator-in-javascript/47593316#47593316
@@ -85,6 +88,12 @@ for (let i = 0; i < EXTRA_SYMBOLS.length; i++) {
     newChip.className = "punctuation";
     newChip.textContent = EXTRA_SYMBOLS[i];
     packageContainer.appendChild(newChip);
+}
+
+if (ROTATE_MAGNETS) {
+    for (let i = 0; i < packageContainer.children.length; i++) {
+        packageContainer.children[i].setAttribute("style", "rotate: " + (Math.random() * 2.0 - 1.0).toString() + "deg");
+    }
 }
 
 function getPoemAsPlaintext() {

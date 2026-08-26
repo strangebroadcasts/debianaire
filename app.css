@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: ghostwhite;
+    text-align: center;
+    font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+}
+
+.container {
+    margin: auto;
+    border: 2px solid #444444;
+    width: 75%;
+    min-height: 3em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#packageContainer {
+    background-color: aliceblue;
+}
+
+#poemContainer {
+    background-color: aliceblue;
+}
+
+/* Each of the fridge magnets */
+.container>div {
+    border: 2px solid black;
+    background-color: antiquewhite;
+    padding: 1em;
+    margin: 0.2em;
+    max-width: fit-content;
+    font-family: "Life Savers", serif;
+    font-weight: 800;
+    font-style: normal;
+    flex: 1 1 150px;
+}
