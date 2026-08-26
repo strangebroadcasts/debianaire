@@ -1,6 +1,6 @@
 # debianaire - package manager fridge poems
 
-Fridge magnet poetry with Debian package names.
+Fridge magnet poetry with Debian package names - [try me at Itch.io](https://strangebroadcasts.itch.io/debianaire)
 
 ## Running
 
