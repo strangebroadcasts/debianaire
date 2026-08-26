@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Debianaire - package poetry</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid #f76707;
+            background-color: #fff4e6;
+        }
+
+        .container>div {
+            border: 2px solid #ffa94d;
+            background-color: #ffd8a8;
+            padding: 1em;
+            max-width: fit-content;
+        }
+
+        .container {
+            width: 50%;
+            min-height: 3em;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container>div {
+            flex: 1 1 150px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <h1>Debianaire - package poetry</h1>
+    <sub>Idea by <a href="https://bsky.app/profile/iznaut.com/post/3mtyka6yscc2q">izzy kestrel</a>. Uses <a
+            href="https://github.com/SortableJS/Sortable">Sortable</a>.</sub>
+
+    <h2>Today's packages</h2>
+    <div id="packageContainer" class="container"></div>
+    <h2 id="dateTitle">Your poem for today</h2>
+    <div id="poemContainer" class="container"></div>
+
+    <h2>Share</h2>
+    <button id="clipboardBtn">Copy to clipboard</button>
+    <button id="bskyBtn">Share on Bluesky</button>
+
+
+    <script type="text/javascript" src="./lib/Sortable.min.js"></script>
+
+    <script type="text/javascript" src="./words/dictionary.js"></script>
+    <script type="text/javascript" src="./words/poetry.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
